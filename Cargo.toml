@@ -1,0 +1,16 @@
+[package]
+name = "tokio-memcached-rawl"
+version = "0.1.20250613"
+edition = "2024"
+description = "Tokio-based Memcached binary protocol client (WIP)"
+license = "MIT"
+
+[dependencies]
+tokio = { version = "1.45.1", default-features = false, features = [
+    "macros",
+    "rt",
+    "time",
+    "sync",
+    "net",
+    "io-util",
+] }
